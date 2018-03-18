@@ -1,10 +1,11 @@
 require 'pry'
+require '../lib/song.rb'
 
 extend Memorable::ClassMethods
 
 class Artist
   attr_accessor :name
-  
+
   @@artists = []
 
   def self.find_by_name(name)
